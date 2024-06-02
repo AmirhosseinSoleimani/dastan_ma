@@ -53,8 +53,49 @@ class AppThemeData {
 
   static ThemeData get darkTheme {
     return ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.dark,
+        useMaterial3: true,
+        brightness: Brightness.light,
+
+        primaryColor: ColorThemeManager.transparent,
+        cardColor: ColorThemeManager.lightBlue,
+        indicatorColor: ColorThemeManager.primary,
+
+        colorScheme: ColorScheme(
+          primary: ColorDarkThemeManager.primary,
+          onPrimary: ColorDarkThemeManager.darkPurpleColor,
+
+          secondary: ColorDarkThemeManager.whiteColor,
+          onSecondary: ColorDarkThemeManager.greyColor,
+
+          error: ColorThemeManager.redColor,
+          onError: ColorThemeManager.lightRedColor,
+
+          surface: ColorDarkThemeManager.backGroundColor,
+          onSurface: ColorThemeManager.colorHoloGreyPrimary,
+          brightness: Brightness.light,
+        ),
+
+        textTheme: TextTheme(
+          headlineLarge: getBoldStyle(fontSize: AppSize.s24, color: ColorThemeManager.colorBlack),
+          headlineMedium: getSemiBoldStyle(fontSize: AppSize.s24, color: ColorThemeManager.colorBlack),
+          headlineSmall: getRegularStyle(fontSize: AppSize.s24, color: ColorThemeManager.colorBlack),
+
+          titleLarge: getBoldStyle(fontSize: AppSize.s18, color: ColorDarkThemeManager.whiteColor),
+          titleMedium: getSemiBoldStyle(fontSize: AppSize.s18, color: ColorDarkThemeManager.whiteColor),
+          titleSmall: getRegularStyle(fontSize: AppSize.s18, color: ColorDarkThemeManager.whiteColor),
+
+          displayLarge: getBoldStyle(fontSize: AppSize.s16, color: ColorDarkThemeManager.whiteColor),
+          displayMedium: getSemiBoldStyle(fontSize: AppSize.s16, color: ColorDarkThemeManager.whiteColor),
+          displaySmall: getRegularStyle(fontSize: AppSize.s16, color: ColorDarkThemeManager.whiteColor),
+
+          bodyLarge: getBoldStyle(fontSize: AppSize.s14, color: ColorDarkThemeManager.greyColor),
+          bodyMedium: getSemiBoldStyle(fontSize: AppSize.s14, color: ColorDarkThemeManager.greyColor),
+          bodySmall: getRegularStyle(fontSize: AppSize.s14, color: ColorDarkThemeManager.greyColor),
+
+          labelLarge: getBoldStyle(fontSize: AppSize.s12, color: ColorThemeManager.colorBlack),
+          labelMedium: getSemiBoldStyle(fontSize: AppSize.s12, color: ColorThemeManager.colorBlack),
+          labelSmall: getRegularStyle(fontSize: AppSize.s12, color: ColorThemeManager.colorBlack),
+        ).apply(fontFamily: FontConstants.fontFamily)
     );
   }
 }

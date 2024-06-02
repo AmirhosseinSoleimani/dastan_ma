@@ -47,7 +47,7 @@ GoRouter goRouter(GoRouterRef ref) {
       GoRoute(
         path: AuthenticationPage.routeName,
         name: AppRoute.auth.name,
-        pageBuilder: (context, state) => const MaterialPage(
+        pageBuilder: (context, state) => MaterialPage(
           fullscreenDialog: true,
           child: AuthenticationPage(),
         ),

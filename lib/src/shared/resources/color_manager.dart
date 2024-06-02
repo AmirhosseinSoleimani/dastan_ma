@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:daastane_ma/src/shared/extensions/extensions.dart';
 
 class ColorThemeManager {
-  static Color primary = HexColor.fromHex('#007AFF');
+  static Color primary = HexColor.fromHex('#176E6E');
   static Color purple = HexColor.fromHex('#6463D6');
   static Color backGroundColor = HexColor.fromHex('#F6F6F6');
   static Color appBarColor = HexColor.fromHex('#F2F2F2');
@@ -17,5 +17,15 @@ class ColorThemeManager {
   static Color accent1 = HexColor.fromHex('#E4935D');
   static Color accent2 = HexColor.fromHex('#BEABA1');
   static Color lightBlue = HexColor.fromHex('#2FBFDE');
+  static Color transparent = Colors.transparent;
+}
+
+class ColorDarkThemeManager {
+  static Color primary = HexColor.fromHex('#f39c12');
+  static Color backGroundColor = HexColor.fromHex('#171717');
+  static Color whiteColor = HexColor.fromHex('#ffffff');
+  static Color greyColor = HexColor.fromHex('#737373');
+  static Color tealColor = HexColor.fromHex('#3C9773');
+  static Color darkPurpleColor = HexColor.fromHex('#2e0336');
   static Color transparent = Colors.transparent;
 }

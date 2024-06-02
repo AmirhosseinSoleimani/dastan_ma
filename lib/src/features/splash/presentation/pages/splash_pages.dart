@@ -1,4 +1,4 @@
-import 'package:daastane_ma/src/features/splash/presentation/providers/splash_controller.dart';
+import 'package:daastane_ma/src/features/splash/presentation/providers/splash_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
